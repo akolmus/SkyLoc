@@ -1,0 +1,11 @@
+# General properties of the dataset
+name: noise_5000
+nb_samples: 5000
+
+# Simulation parameters
+nb_processes: 4
+seed: 1337
+frequency_lower: 40
+frequency_upper: 2048
+sampling_rate: 4096
+duration: 3.0

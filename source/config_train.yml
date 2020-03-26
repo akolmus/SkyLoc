@@ -1,0 +1,19 @@
+data:
+  name: simple_5000
+  noise: noise_5000
+  SNR: 10
+  frequency_lower: 40
+  frequency_upper: 2048
+  bandpass_lower: 128
+  bandpass_upper: 2048
+  whitening_segment_duration: 0.5
+  whitening_max_filter_duration: 0.5
+
+training:
+  batch_size: 16
+  nb_workers: 2
+  nb_epochs: 10
+  device: cuda:0
+
+model:
+  loss: Kent # The options for the loss functions are: 'VMF' or 'Kent'

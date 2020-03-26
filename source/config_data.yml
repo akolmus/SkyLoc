@@ -1,0 +1,33 @@
+# General properties of the dataset
+name: simple_5000
+nb_samples: 5000
+
+# Simulation parameters
+nb_processes: 4
+seed: 1337
+
+# General properties that pertain to (the generation of) all samples
+general_properties:
+  approximant: SEOBNRv4
+  f_lower: 40
+  sampling_rate: 4096
+  sec_before_event: 0.5
+  sec_after_event: 1.5
+  tukey_alpha: 0.0
+
+# Specifies the ranges/priors of the parameters from which the samples are generated
+prior:
+  mass1_min: 20
+  mass1_max: 20
+  mass2_min: 20
+  mass2_max: 20
+  spin1z_min: 0
+  spin1z_max: 0.0
+  spin2z_min: 0
+  spin2z_max: 0.0
+  coa_phase: False
+  inclination: False
+  right_ascension: True
+  declination: True
+  polarization: False
+  endtime: False
