@@ -1,4 +1,6 @@
+.idea
 /moredata/
 /output/
 /source/temp.py
 /source/temp_kent.py
+/source/__pycache__/
