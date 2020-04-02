@@ -1,7 +1,7 @@
 data:
-  name: simple_5000
-  noise: noise_5000
-  SNR: 10
+  name: simple_10000
+  noise: noise_10000
+  SNR: 5
   frequency_lower: 40
   frequency_upper: 2048
   bandpass_lower: 128
@@ -12,8 +12,10 @@ data:
 training:
   batch_size: 16
   nb_workers: 2
-  nb_epochs: 10
-  device: cuda:0
+  nb_epochs: 5
+  device: cpu:0
 
 model:
-  loss: Kent # The options for the loss functions are: 'VMF' or 'Kent'
+  loss: VMF # The options for the loss functions are: 'VMF' or 'Kent'
+
+test_name: test_simple_5000

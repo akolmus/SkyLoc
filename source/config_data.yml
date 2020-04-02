@@ -1,5 +1,5 @@
 # General properties of the dataset
-name: simple_5000
+name: test_simple_5000
 nb_samples: 5000
 
 # Simulation parameters

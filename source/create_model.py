@@ -56,6 +56,19 @@ def training(cfg_data: dict, cfg_train: dict, id_time:str) -> torch.nn.Module:
         # The actual training is defined inside the model
         model.epoch(cfg_train, trn_load, val_load, epoch_nb)
 
+    # Cleanup
+    del trn_data, val_data, trn_load, val_load
+
+    # # Evaluate on test data
+    # logger.info(f'Testing on test set: {cfg_train["test_name"]}')
+    #
+    # # Create the data
+    # tst_parameters = pd.read_csv(f'../moredata/{cfg_train["test_name"]}/parameters.csv')
+    # tst_data = GravitationalWavesDataset(tst_parameters, cfg_data, cfg_train)
+    # tst_load = DataLoader(tst_data, batch_size=cfg_train['training']['batch_size'], shuffle=False, num_workers=cfg_train['training']['nb_workers'])
+    #
+    # # Evaluate & predict afterwards (to get tar - output pair)
+    # model.evaluate(cfg_train, tst_load)
 
 if __name__ == '__main__':
     # Open the configuration files
